@@ -1,25 +1,24 @@
-
-#contact{
+#contact {
 
     width: 100%;
     height: 400px;
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     background-color: lightblue;
 
 }
 
-#form_box{
+#form_box {
 
     width: 50%;
-    height:300px;
+    height: 300px;
     margin: auto;
     background-color: rgb(147, 175, 115);
-    
+
 
 }
 
-#form_box>form>input{
+#form_box>form>input {
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -27,14 +26,15 @@
     height: 20px;
 }
 
-#form_box>form>textarea{
+#form_box>form>textarea {
     display: block;
     margin: auto;
     margin-top: 20px;
     width: 70%;
     height: 40px;
 }
-#form_box>form>button{
+
+#form_box>form>button {
 
     display: block;
     margin: auto;
@@ -44,61 +44,91 @@
 
 }
 
+#contact_opt {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(115, 146, 175);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+#mail {
+
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+}
+
+#mail>a {
+    text-decoration: none;
+    color: black;
+}
+
+#mail>a>img {
+
+    width: 40px;
+    height: 40px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#mail{
-
+#phone {
     width: 200px;
-    height: 200px;
-   
+    height: 100px;
+
 }
 
-#mail>a>img{
+#phone>a {
+    text-decoration: none;
+    color: black;
+}
+
+#phone>a>img {
+    width: 40px;
+    height: 40px;
+}
+
+
+#linkedin {
+    width: 100px;
+    height: 100px;
+
+}
+
+#linkedin>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#linkedin>a>img {
+    width: 40px;
+    height: 40px;
+
+}
+
+#github {
 
     width: 100px;
     height: 100px;
-}
-#phone{
-    width: 200px;
-    height: 100px;
-   
+
 }
 
-#phone>img{
-    width: 100px;
-    height: 100px;
+#github>a>img {
+
+    width: 40px;
+    height: 40px;
+    
+}
+
+#github>a {
+
+    text-decoration: none;
+    color: black;
 }
 
 
-#linkedin{
-    width: 100px;
-    height: 100px;
-  
-}
 
-#github{
-    width: 100px;
-    height: 100px;
- 
-}
 
-#github>a>img{
-
-    width: 100px;
-    height: 100px;
-}
