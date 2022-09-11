@@ -1,14 +1,13 @@
 
       #home{
          width: 100%;
-         height: 2150px;
+         height: 600px;
          display: flex;
-         
          background-color: black;
       }
 
       #home_left{
-        width: 40%;
+        width: 50%;
         height: 100%;
         background-color: #545FC4;
       }
@@ -16,20 +15,20 @@
       #home_right{
         width: 60%;
         height: 100%;
-        background-color: rgb(12, 11, 11);
+        background-color: black;
       }
 
       #home_img{
-
-        width: 150px;
-        height: 150px;
+        margin-top:150px;
+        padding: 2px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-       opacity: 1;
-       transform: translateX(-30%);
-       border-radius: 50%;
-        box-shadow: 0 10px 30px hsl(0deg 0% 93% / 20%);
-       transition: opacity .8s;
-        background-color: #222;
+        transform: translateX(-40%);
+    
+        opacity: 1;
+        box-shadow: 0 10px 50px rgb(231, 204, 204);
+        background-color: rgb(128, 123, 127);
       }
 
 
