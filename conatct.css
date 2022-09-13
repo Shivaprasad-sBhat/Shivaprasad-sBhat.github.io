@@ -44,6 +44,22 @@
 
 }
 
+#send_btn{
+    background-color: aquamarine;
+    border-radius: 20px;
+    transition: none;
+}
+
+#send_btn:hover{
+    transition: 2px;;
+    transition-duration: 2ms;
+}
+
+
+
+
+
+
 #contact_opt {
     width: 50%;
     height: 300px;
@@ -75,7 +91,7 @@
 
 
 #phone {
-    width: 200px;
+    width: 100px;
     height: 100px;
 
 }
@@ -132,3 +148,9 @@
 
 
 
+@media all and (min-width:401px)and (max-width:800px) {
+
+
+
+    
+}

@@ -1,162 +1,369 @@
-
-
-      #home {
-        padding-top: 30px;
-     
-        border: 1px solid rgb(128, 0, 32);
-        width: 100%;
-        height: 500px;
-        display: flex;
-         background-color: black;
-    }
-
-    
-
-      #home_left{
-        width: 50%;
-        height: 100%;
-        background-color: #545FC4;
-      }
-
-      #home_right{
-        width: 60%;
-        height: 100%;
-        background-color: black;
-      }
-
-      #home_img{
-        margin-top:150px;
-        padding: 2px;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        transform: translateX(-40%);
-    
-        opacity: 1;
-        box-shadow: 0 10px 50px rgb(231, 204, 204);
-        background-color: rgb(128, 123, 127);
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 
-      #typed_string{
+#home {
 
-        width: 400px;
-       
-        margin: auto;
-      }
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:20% 80% ;
+  grid-template-rows: 30% 70%;
+  background-color: rgb(236, 225, 225);
+  padding-top: 50px;
+  grid-template-areas: "left right"
+                        "left about";
+}
 
-      #typed_string>h2 {
-        color: white;
-      
-
-
-/* =============================================================== */
-        /*   box-sizing: inherit;
-         overflow: hidden;
-        box-sizing: inherit;
-         direction: ltr;
-        cursor: -webkit-grab;
-        text-align: center;
-        float:left;
-       transition: all 200ms ease-out 0s; 
-     transform: translate3d(-1330px, 0px, 0px); */
-/* ================================================================ */
-        border-right: 10px solid rgb(177, 85, 9);
-        font-family:monospace;
-        font-size: 24px;
-         overflow: hidden;
-        white-space: nowrap;
-        font-weight: bolder;
-       
-      }
-      #typed_string>h2:nth-child(1) {
-        width: 350px;
-       
-        -webkit-animation: type 2s steps(25, end);
-        animation: type 2s steps(25, end);
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-       
-      }
-      #typed_string>h2:nth-child(2) {
-        width: 430px;
-        opacity: 0;
-      
-        -webkit-animation: type2 2s steps(30, end);
-        animation: type2 2s steps(30, end);
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode:forwards;
-      }
+#home_left {
   
+  background-color: #b3b4c4;
+  grid-area: left;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+#home_img {
+  display: block;
+  margin: auto;
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
  
-      @keyframes type {
-        0% {
-          width: 0;
-        }
-        99.9% {
-          border-right: 10px solid #82B533;
-        }
-        100% {
-          border: none;
-        }
-      }
-      @-webkit-keyframes type {
-        0% {
-          width: 0;
-        }
-        99.9% {
-          border-right: .15em solid #82B533;
-        }
-        100% {
-          border: none;
-        }
-      }
+}
 
-      
-       @keyframes type2 {
-        0% {
-          width: 0;
-        }
-        1% {
-          opacity: 1;
-        }
-        99.9% {
-          border-right: .15em solid #82B533;
-        }
-        100% {
-          opacity: 1;
-          border: none;
-        }
-      }
-       @-webkit-keyframes type2 {
-        0% {
-          width: 0;
-        }
-        1% {
-          opacity: 1;
-        }
-        99.9% {
-          border-right: .15em solid #82B533;
-        }
-        100% {
-          opacity: 1;
-          border: none;
-        }
-      } 
+#home_right {
+  grid-area: right;
+  background-color:  rgb(236, 225, 225);
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
 
-      @keyframes blink {
-        50% {
-          border-color: transparent;
-        }
-      }
-      @-webkit-keyframes blink {
-        50% {
-          border-color: transparent;
-        }
-      } 
+#about{
+  grid-area: about;
+  background-color: rgb(164, 140, 165);
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+  row-gap: 20px;
+  align-items: center;
   
+}
+
+#about_card{
+  width: 60%;
+
+  flex-wrap: wrap;
+  background-color: burlywood;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#resume{
+  text-align: center;
+  width: 180px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+
+  background-color: rgb(143, 175, 143);
+  border-radius: 10px;
+}
+
+#wrap_typed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.wrapper {
+  display: inline-flex;
+
+}
+
+
+.wrapper .dynamic_txt {
+
+  height: 62px;
+
+  line-height: 62px;
+  overflow: hidden;
+
+}
+
+.dynamic_txt li {
+  color: rgb(122, 77, 40);
+  list-style: none;
+  font-size: 45px;
+  font-weight: 500;
+
+  position: relative;
+  top: 0;
+  animation: slides 9s steps(2) infinite;
+
+}
+
+.dynamic_txt li span {
+  position: relative;
+}
+
+.dynamic_txt li span::after {
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  left: 0;
+  background:rgb(236, 225, 225);
+  border-left:1px solid rgb(7, 6, 6) ;
+  animation: typing 4.5s steps(22) infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  100% {
+    left: 110%;
+
+  }
+/* 
+
+  0% {
+    -webkit-transform: translateX(-2000px) scale(0.9);
+    transform: translateX(-2000px) scale(0.9);
+    opacity: 0.9;
+  }
+
+  70% {
+    -webkit-transform: translateX(0) scale(0.9);
+    transform: translateX(0) scale(0.9);
+    opacity: 0.9;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  } */
+
+
+
+}
+
+@keyframes slides {
+  100% {
+
+    top: -110px;
+  }
+
+
+}
+
+/* ================================Medium Screen======================== */
+
+@media all  and  (max-width:990px) {
+
+
+
+  #home {
+   
+    height: auto;
+    grid-template-columns:100% ;
+    grid-template-rows: 25vh 25vh 50vh;
+    grid-template-areas:
+    "middle"
+     "top"
+     "about";               
+  }
+
+  #home_left {
+    width: 100%;
+    grid-area: top;
+    
+  
+  }
+
+  #home_right {
+    width: 100%;
+    grid-area: middle;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about{
+    width: 100%;
+    grid-area: about;
+  }
+  #about_card{
+    width: 90%;
+    padding: 10px;
+   
+  }
+
+  #home_img {
+    width: 130px;
+    height: 130px;
+
+  }
 
   
+.wrapper .dynamic_txt {
+
+
+  height: 35px;
+
+  line-height: 38px;
+ 
+
+}
+
+.dynamic_txt li {
+ 
+  font-size: 32px;
+  font-weight: 400;
+
+
+}
+
+
+.dynamic_txt li span::after {
+
+  width: 100%;
+  height: 120%;
+  
+}
+
+@keyframes typing {
+  100% {
+    left: 110%;
+
+  }
+
+
+}
+
+@keyframes slides {
+  100% {
+
+    top: -78px;
+  }
+
+
+}
+
+
+}
+
+/* ============================Small Screen======================================== */
+
+@media all  and  (max-width:580px) {
+
+
+
+  #home {
+   
+    
+    grid-template-columns:100% ;
+    grid-template-rows: 25vh 25vh 50vh;
+    grid-template-areas:
+    "middle"
+     "top"
+     "about";               
+  }
+
+  #home_left {
+    width: 100%;
+    grid-area: top;
+    
+  
+  }
+
+  #home_right {
+    width: 100%;
+    grid-area: middle;
+  }
+  
+  #about{
+    width: 100%;
+    grid-area: about;
+  }
+  #about_card{
+    width: 90%;
+    padding: 2px;
+  }
+  #about_card>h2{
+      font-size: 15px;
+      font-weight: normal;
+  }
+
+  #home_img {
+    width: 100px;
+    height: 100px;
+
+  }
+
+  
+.wrapper .dynamic_txt {
+
+
+  height: 28px;
+
+  line-height: 28px;
+ 
+
+}
+
+.dynamic_txt li {
+ 
+  font-size: 25px;
+  font-weight: 400;
+
+
+}
+
+
+.dynamic_txt li span::after {
+
+  width: 100%;
+  height: 120%;
+  
+}
+
+@keyframes typing {
+  100% {
+    left: 110%;
+
+  }
+
+
+}
+
+@keyframes slides {
+  100% {
+
+    top: -62px;
+  }
+
+
+}
+
+
+}
