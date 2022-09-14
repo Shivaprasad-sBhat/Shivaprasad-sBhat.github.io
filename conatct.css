@@ -19,19 +19,46 @@
 }
 
 #form_box>form>input {
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    width: 70%;
-    height: 20px;
+   
+
+    --primary-color: #2442d7;
+    --primary-hover: #1b32a3;
+    margin: 0;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 10px;
+    font-family: Poppins;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #fff;
 }
 
 #form_box>form>textarea {
     display: block;
     margin: auto;
+    border: 1px solid transparent;
     margin-top: 20px;
     width: 70%;
     height: 40px;
+
+    --primary-color: #2442d7;
+    --primary-hover: #1b32a3;
+    margin: 0;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 10px;
+    font-family: Poppins;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #fff;
 }
 
 #form_box>form>button {
@@ -45,9 +72,23 @@
 }
 
 #send_btn{
-    background-color: aquamarine;
-    border-radius: 20px;
-    transition: none;
+    width: 80px;
+    --primary-color: #2442d7;
+    --primary-hover: #1b32a3;
+
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all .2s;
+    text-align: center;
+   
+    cursor: pointer;
+    padding: 12px 60px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 #send_btn:hover{
