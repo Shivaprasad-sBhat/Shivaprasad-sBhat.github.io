@@ -1,7 +1,4 @@
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -9,29 +6,29 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #080808;
     color: #fff;
 
 }
 
 
-#contact{
+#contact {
     width: 100%;
-    height: 80vh;
+    height: 30vh;
 }
 
 
-.container{
+.container {
     padding: 10px 10%;
 
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,40 +37,35 @@ body{
 
 
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(0, 17, 255);
+    border: 1px solid rgb(224, 224, 233);
     padding: 14px 50px;
     text-decoration: none;
     border-radius: 6px;
     color: rgb(54, 62, 182);
-    transition:  0.5s; 
+    transition: 0.5s;
 
 }
 
-.btn:hover{
-    background: rgb(123, 255, 0);
-    color: black;
+.btn2:hover {
+    transform: translateY(-5px);
+    color: rgb(139, 154, 168);
 }
+.contact-left {
 
-
-
-
-
-.contact-left{
-   
     flex-basis: 35%;
 }
 
-.contact-ryt{
+.contact-ryt {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
-}  
+}
 
 .contact-left p i {
     color: yellow;
@@ -82,70 +74,74 @@ body{
 }
 
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
 
-.social-icons a{
-text-decoration: none;
-font-size: 27px;
-margin-right: 15px;
-margin-top: 10px;
-color:#ababab;
-display: inline-block;
-transition: transform 0.5s;
-}
-.social-icons a span{
-
+.social-icons a {
     text-decoration: none;
-font-size: 24px;
-margin-right: 10px;
-margin-top: 10px;
-color:#ababab;
-display: inline-block;
-transition: transform 0.5s;
+    font-size: 27px;
+    margin-right: 15px;
+    margin-top: 10px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+.social-icons a span {
+   
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
     color: rgb(0, 174, 255);
     transform: translateY(-5px);
 }
 
-.social-icons a span:hover{
+.social-icons a span:hover {
     color: rgb(0, 174, 255);
     transform: translateY(-5px);
 }
-.btn.btn2{
-display: inline-block;
-background: rgb(98, 177, 187);
-color: black;
+
+.btn.btn2 {
+    display: inline-block;
+    background: rgb(98, 177, 187);
+    color: black;
 }
 
-.contact-ryt form{
+.contact-ryt form {
     width: 100%;
 
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background:#262626;
-    padding: 15px;
-    margin: 15px 0;
+    background: #262626;
+    padding: 10px;
+    margin: 10px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
 
 }
 
-form .btn2{
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
-margin-top: 20px;
-cursor: pointer;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -154,33 +150,33 @@ cursor: pointer;
     margin-top: 20px;
 
 
-} 
+}
 
 
 /* ================Media query======================= */
 
-nav .fas{
+nav .fas {
     display: none;
 }
 
 @media only screen and (max-width:600px) {
 
-    
-    #contact{
-        padding-left: 20%;
-      
-    }
-    
-   
 
-    .contact-left, .contact-ryt{
+    #contact {
+        padding-left: 20%;
+
+    }
+
+
+
+    .contact-left,
+    .contact-ryt {
         margin: auto;
         flex-basis: 100%;
 
     }
-    .copyright{
+
+    .copyright {
         font-size: 14px;
     }
 }
-
-
