@@ -55,22 +55,5 @@ height: 100vh;
 	}
 }
 
-.dynamic_txt li {
-    color: rgb(231, 224, 218);
-    list-style: none;
-    font-size: 45px;
-    font-weight: 500;
-  
-    position: relative;
-    top: 0;
-    animation: slides 5.6s steps(2) infinite;
-  
-  }
 
-@keyframes slides {
-    100% {
-  
-      left: 200px;
-    }
-}
 

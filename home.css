@@ -121,9 +121,9 @@ html{
 
 .wrapper .dynamic_txt {
 
-  height: 62px;
+  height: 60px;
 
-  line-height: 62px;
+  line-height: 60px;
   overflow: hidden;
 
 }
@@ -131,7 +131,7 @@ html{
 .dynamic_txt li {
   color: rgb(231, 224, 218);
   list-style: none;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 500;
 
   position: relative;
@@ -175,7 +175,7 @@ html{
 @keyframes slides {
   100% {
 
-    top: -130px;
+    top: -135px;
   }
 
 
