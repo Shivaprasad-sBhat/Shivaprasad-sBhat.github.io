@@ -1,25 +1,35 @@
 * {
-    
+
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
+
 /* #79031d  #d08856  #013328 #2d3e43 #596235  #d96846 #344648 #2F4F4F;*/
 
-body{
+body {
 
-    background-color:#1c2b2b;
+
+    background-color: #1c2b2b;
     height: max-content;
 }
-#container{
+
+#container {
     margin: 0%;
     border: 0px;
     padding: 0px;
     width: 100%;
     height: auto;
-  background-color:#1c2b2b;
+    background-color: #1c2b2b;
 
- 
-   
+
+
+}
+
+#container1 {
+
+background-color: #000;
+max-width: 100%;
 }
 
 
@@ -31,28 +41,29 @@ body{
     display: flex;
     justify-content: space-between;
     padding-left: 15%;
-    padding-right: 15%;;
+    padding-right: 15%;
+    ;
     position: fixed;
-    background-color:#000e0b;
+    background-color: #000e0b;
     z-index: 1;
-    
+
 }
 
 
-#navabar a{
+#navabar a {
     color: rgb(73, 42, 42);
 }
 
 #menu {
-   
-   
+
+
     width: 50%;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
-#menu>div{
+#menu>div {
     margin: auto;
 
     padding: 2px;
@@ -67,19 +78,31 @@ body{
 
 
 }
+#logo{
+    width: 25%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
-@media all  and  (max-width:580px) {
-    #menu {
+#logo img{
+    width: 12%;
     
+}
+
+@media all and (max-width:580px) {
+    #menu {
+
         width: 80%;
-      
+
     }
+
     #menu>div>a {
 
         font-size: 15px;
-       
-    
-    
+
+
+
     }
 }
 
@@ -112,8 +135,3 @@ body{
 }
 
  */
-
-
-
-
-

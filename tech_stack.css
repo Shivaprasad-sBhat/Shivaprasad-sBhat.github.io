@@ -1,0 +1,76 @@
+
+#skill{
+width: 100vw;
+height: 100vh;
+
+}
+.techstack ,
+.slide-rotate{
+    width: 80%;
+    height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+}
+
+
+
+.slide {
+  
+	background-color: whitesmoke;
+	box-shadow: 0px 10px 20px -5px rgb(0, 0, 0);
+	padding: 50px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.slide img{
+    width: 30px;
+    height: 300px;
+}
+
+.slide::before,
+.slide::after {
+	content: "";
+	height: 10px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+ .slide-rotate>.slide {
+	animation: rotates 4s linear infinite;
+	display: flex;
+	width: calc(250px * 17);
+}
+@keyframes rotates {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 9));
+	}
+}
+
+.dynamic_txt li {
+    color: rgb(231, 224, 218);
+    list-style: none;
+    font-size: 45px;
+    font-weight: 500;
+  
+    position: relative;
+    top: 0;
+    animation: slides 5.6s steps(2) infinite;
+  
+  }
+
+@keyframes slides {
+    100% {
+  
+      left: 200px;
+    }
+}
+

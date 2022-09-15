@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html{
+  size-adjust: var(100%);
+}
 
 
 #home {
@@ -11,9 +14,9 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20vw 80vw;
   grid-template-rows: 30% 70%;
- 
+
   padding-top: 50px;
   grid-template-areas: "left right"
     "left about";
@@ -21,11 +24,11 @@
 
 #home_left {
 
-  
+
   grid-area: left;
   display: flex;
   align-items: center;
-background-color: darkslategrey;
+  background-color: darkslategrey;
 }
 
 
@@ -34,10 +37,10 @@ background-color: darkslategrey;
   display: block;
   margin: auto;
   padding: 2px;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-
+ 
 }
 
 #home_right {
@@ -50,7 +53,7 @@ background-color: darkslategrey;
 
 #about {
   grid-area: about;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +75,7 @@ background-color: darkslategrey;
   justify-content: center;
   padding: 20px;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 #resume {
@@ -85,7 +89,7 @@ background-color: darkslategrey;
   align-items: center;
   justify-content: center;
   color: rgb(48, 75, 194);
- 
+
   border-radius: 10px;
   padding: 8px;
 }
@@ -96,9 +100,11 @@ background-color: darkslategrey;
   width: 40px;
   height: 45px;
 }
-#download_resume{
+
+#download_resume {
   text-decoration: none;
 }
+
 #wrap_typed {
   display: flex;
   align-items: center;
@@ -157,6 +163,7 @@ background-color: darkslategrey;
     left: 110%;
 
   }
+
   0% {
     right: -110%;
 
@@ -174,11 +181,12 @@ background-color: darkslategrey;
 
 }
 
+
 /* ================================Medium Screen======================== */
 
 @media all and (max-width:990px) {
 
-
+ 
 
   #home {
 
@@ -316,8 +324,8 @@ background-color: darkslategrey;
   }
 
   #home_img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 
   }
 
