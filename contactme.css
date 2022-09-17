@@ -139,16 +139,8 @@ form .btn2 {
     cursor: pointer;
 }
 
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
 
 
-}
 nav .fas {
     display: none;
 }
@@ -172,9 +164,7 @@ nav .fas {
 
     }
 
-    .copyright {
-        font-size: 14px;
-    }
+    
 }
 
 @media only screen and (max-width:580px) {
