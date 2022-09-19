@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Shivaprasad Bhat Portfolio</title>
-    <link rel="short icon" href="Image/log3.PNG" >
-    <link rel="stylesheet" href="index.css">
+    <link rel="short icon" href="Image/log3.PNG">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
+   
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="contactme.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="tech_stack.css">
+   
+    <link rel="stylesheet" href="tech_stack.css"> 
+
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,237 +26,211 @@
 </style>
 
 <body>
-    <div id="container1">
-        <div id="container">
 
 
-            <div id="navbar">
+  
+        <nav>
+            <span><p id="logo" style="font-family: fantasy;font-style: italic;color: honeydew;">Shivaprasad</p></span>
+            <span>
+                <ul id="sidemenu">
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-                <div id="logo">
-                    <a href="#home">
-                        <img src="Image/log3.PNG" alt="Shivaprasad" style="width: 1.8rem;;font-family:sans-serif;font-size: 2rem ;color:white; text-decoration: none;">
-                    </a>
-                </div>
+                    <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
 
-                <div id="menu">
-                    <div>
-                        <a href="/#home">About</a>
-                    </div>
+                </ul>
+            </span>
+            <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
 
-                    <div>
-                        <a href="/#skill">Skill</a>
-                    </div>
-                    <div>
-                        <a href="/#work">Project</a>
-                    </div>
-                    <div>
-                        <a href="/#contact">Contact</a>
-                    </div>
-                </div>
+        </nav>
+
+  
+
+
+
+    <!--===========================================Home========================================== -->
+
+
+  
+    <div id="home">
+
+
+        <div id="home_left">
+
+            <img id="home_img" src="Image/profile_pic.jpg" alt="Shivaprasad">
+
+        </div>
+
+
+        <div id="home_right">
+
+            <h2>Hi, I am Shivaprasad Bhat</h2>
+            <h4>I am Full-Stack Web Developer </h4>
+        </div>
+        <div id="about">
+            <div id="about_card">
+                <div>About Me</div>
+                <h4>I am Web Developer.
+                    interest in building user-centric products. Looking forward to honing my skills in a
+                    challenging
+                    work environment .</h4>
+            </div>
+    
+            <a href="Image/Shivaprasad_Bhat_Resume.pdf" download download class="btn btn2"> RESUME <i
+                    class="fa-solid fa-download"> </i> </a>
+        </div>
+    </div>
+
+
+    <!-- ----------------------Skills---------------------------->
+     <div id="skill">
+        <h1>Technical Skills</h1>
+
+        <div class="techstack">
+
+            <div class="slide">
+                <img src="Image/Java.png" alt="Java">
 
             </div>
-            <!--===========================================Home========================================== -->
+            <div class="slide">
+                <img src="Image/spring-finl.svg" alt="Spring Boot">
+
+            </div>
+
+            <div class="slide">
+                <img src="Image/mysql-logo.png" alt="MySQL">
+
+            </div>
+            <div class="slide">
+                <img src="Image/hibernate-logo.svg" alt="Hibernate">
+
+            </div>
+            <div class="slide">
+                <img src="Image/aws.jpg" alt="AWS">
+
+            </div>
+            <div class="slide">
+                <img src="Image/javascript.png" alt="JavaScript">
+
+            </div>
+            <div class="slide">
+                <img src="Image/HTML logo.png" alt="HTML">
+
+            </div>
+            <div class="slide">
+                <img src="Image/CSS.png" alt="CSS">
+
+            </div>
+            <div class="slide">
+                <img src="Image/logo-data-structure.png" alt="DSA">
+
+            </div>
+            <div class="slide">
+                <img src="Image/git.png" alt="Git">
+
+            </div>
 
 
-            <div id="home">
 
+        </div>
 
-                <div id="home_left">
-                
-                    <img id="home_img" src="Image/profile_pic.jpg" alt="">
+    </div> 
 
-                </div>
+    <!------------------------- Porjects-------------------------->
 
-
-                <div id="home_right">
-
-                    <div id="wrap_typed">
-
-                        <div class="wrapper">
-                            <div class="static_txt"></div>
-
-                            <ul class="dynamic_txt">
-
-                                <li><span>Hi, I am Shivaprasad Bhat </span></li>
-                                <li><span>I am Full-Stack Web Developer </span></li>
-
-                            </ul>
-
-
+    <div id="work">
+        <div class="projects">
+            <h1 class="sub-title" style="text-align:center ;">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="Image/Monday.com">
+                    <div class="layer">
+                        <h3>Monday.com-Clone</h3>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT <br> A platform built for new way for work management
+                        </p>
+                        <div>
+                            <a href="https://github.com/raj74434/puny-cactus-404" target="_blank">Github</a>
+                            <a href="" target="_blank">Live</a>
                         </div>
 
                     </div>
-
+                    <h2 style="text-align:center ;">Monday.com Clone</h2>
+                </div>
+                <div class="work">
+                    <img src="Image/Ideakart.com">
+                    <div class="layer">
+                        <h3>Myntra-Clone</h3>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT<br> Book shoping and selling site</p>
+                        <div>
+                            <a href="https://github.com/Ankur982/U2-CW-Ideacart_Project" target="_blank">GitHub</a>
+                            <a href="https://idea-cart.netlify.app/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <h2 style="text-align:center ;">Ideakart Clone</h2>
+                    <p>Feature</p><br>
+                    <p>login</p>
+                    <p>Easy Navigation</p>
                 </div>
 
-                <div id="about">
-                    <div id="about_card">
-                        <div>About Me</div>
-                        <h4>I am Web Developer.
-                            interest in building user-centric products. Looking forward to honing my skills in a
-                            challenging
-                            work environment .</h4>
+
+            </div>
+        </div>
+    </div> 
+    <!------------------------- Conatct--------------------------->
+     <div id="contact">
+        <div class="container">
+
+            <div class="row">
+               
+                <div class="contact-left">
+                    <h1 class="sub-title" >Contact Me</h1>
+
+                    <div class="social-icons">
+                        <a style="text-decoration: none; color: white;" href="mailto:bhatshivaprasad98@gmail.com"><i
+                                class="fa-solid fa-envelope"><span> bhatshivaprasad98@gmail.com</span> </i> </a>
+                        <a style="text-decoration: none; color: white;" href="tel:8660198190"><i
+                                class="fas fa-phone-square-alt"> <span> +91-8660198190</span></i> </a><br>
+                        <a href="https://www.linkedin.com/in/shivaprasad-bhat/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a><br>
+                        <a href="https://github.com/Shivaprasad-sBhat" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a>
+
                     </div>
 
                     <a href="Image/Shivaprasad_Bhat_Resume.pdf" download download class="btn btn2"> RESUME <i
                             class="fa-solid fa-download"> </i> </a>
                 </div>
 
-            </div>
+
+                <div class="contact-ryt"> Fill form
+                    <form action="https://formsubmit.co/bhatshivaprasad98@gmail.com" method="post" target="_blank">
+
+                        <input type="hidden" name="_template" value="table">
+
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for reaching me.I will contact you soon...">
+
+                        <input type="hidden" name="_subject" value="New submission!">
+
+                        <input type="hidden" name="_next" value="">
+
+                        <input type="text" name="name" placeholder=" Name" required>
+
+                        <input type="email" name="email" placeholder=" Email" required>
+
+                        <textarea name="Message" rows="6" placeholder=" Message"></textarea>
 
 
-        </div>
-
-        <!-- ==============================your skills  ============================== -->
-        <div id="skill">
-            <h2>Technical Skills</h2>
-
-            <div class="techstack">
-
-                <div class="slide">
-                    <img src="Image/Java.png" alt="Java">
-                  
-                </div>
-                <div class="slide">
-                    <img src="Image/spring-finl.svg" alt="Spring Boot">
-                   
-                </div>
-
-                <div class="slide">
-                    <img src="Image/mysql-logo.png" alt="MySQL">
-                   
-                </div>
-                <div class="slide">
-                    <img src="Image/hibernate-logo.svg" alt="Hibernate">
-                 
-                </div>
-                <div class="slide">
-                    <img src="Image/aws.jpg" alt="AWS">
-                 
-                </div>
-                <div class="slide">
-                    <img src="Image/javascript.png" alt="JavaScript">
-                   
-                </div>
-                <div class="slide">
-                    <img src="Image/HTML logo.png" alt="HTML">
-                 
-                </div>
-                <div class="slide">
-                    <img src="Image/CSS.png" alt="CSS">
-            
-                </div>
-                <div class="slide">
-                    <img src="Image/logo-data-structure.png" alt="DSA">
-             
-                </div>
-                <div class="slide">
-                    <img src="Image/git.png" alt="Git">
-              
-                </div>
-
-
-
-            </div>
-
-        </div>
-
-        <div id="work">
-
-            <!--================================ projects =================================== -->
-
-            <div id="project_card_1">
-
-                <div>
-                    <!-- Front page image of project -->
-                </div>
-
-                <div>
-                    <!--Project details -->
-
-                    <div>
-                        <button>
-                            <!-- GithubLink -->
-                        </button>
-                        <button>
-                            <!-- Deploye Link -->
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div id="project_card_2">
-                <div>
-                    <!-- Front page image of project -->
-                </div>
-                <div>
-                    <!--Project details -->
-                    <div>
-                        <button>
-                            <!-- GithubLink -->
-                        </button>
-                        <button>
-                            <!-- Deploye Link -->
-                        </button>
-                    </div>
+                        <button type="submit" class="btn btn2">SEND</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div> 
 
-  
-        <div id="contact">
-            <div class="container">
-
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-
-                        <div class="social-icons">
-                            <a style="text-decoration: none; color: white;" href="mailto:bhatshivaprasad98@gmail.com"><i
-                                    class="fa-solid fa-envelope"><span> bhatshivaprasad98@gmail.com</span> </i> </a>
-                            <a style="text-decoration: none; color: white;" href="tel:8660198190"><i
-                                    class="fas fa-phone-square-alt"> <span> +91-8660198190</span></i> </a><br>
-                            <a href="https://www.linkedin.com/in/shivaprasad-bhat/" target="_blank"
-                                rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a><br>
-                            <a href="https://github.com/Shivaprasad-sBhat" target="_blank" rel="noopener noreferrer"><i
-                                    class="fa-brands fa-github"></i> GitHub</a>
-
-                        </div>
-
-                        <a href="Image/Shivaprasad_Bhat_Resume.pdf" download download class="btn btn2"> RESUME <i
-                                class="fa-solid fa-download"> </i> </a>
-                    </div>
-
-
-                    <div class="contact-ryt"> Fill form
-                        <form action="https://formsubmit.co/bhatshivaprasad98@gmail.com" method="post">
-
-                            <input type="hidden" name="_template" value="table">
-
-                            <input type="hidden" name="_autoresponse"
-                                value="Thank you for reaching me.I will reaching you soon..">
-
-                            <input type="hidden" name="_subject" value="New submission!">
-
-                            <input type="hidden" name="_next" value="">
-
-                            <input type="text" name="name" placeholder=" Name" required>
-
-                            <input type="email" name="email" placeholder=" Email" required>
-
-                            <textarea name="Message" rows="6" placeholder=" Message"></textarea>
-
-
-                            <button type="submit" class="btn btn2">SEND</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    
 </body>
 
 </html>
