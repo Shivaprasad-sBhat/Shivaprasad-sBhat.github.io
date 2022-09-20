@@ -1,287 +1,318 @@
-#home {
-
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 18vw 68vw;
-    grid-template-rows: 30% 70%;
-    margin: auto;
-   
-    padding: 30px 10% 0 10%;
-    grid-template-areas: "left right"
-        "left about";
-}
-
-#home_left {
-    grid-area: left;
-    display: flex;
-    align-items: center;
-
-}
-
-
-
-#home_img {
-    display: block;
-    margin: auto;
-    padding: 2px;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
-
-}
-
-#home_right {
-    grid-area: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-#about {
-    grid-area: about;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 2rem;
-    align-items: center;
-
-}
-
-#about_card {
-    width: 60%;
-
-    flex-wrap: wrap;
-
-    color: #97b695;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 2.5rem;
-    overflow: hidden;
-}
-
-#about_card>div {
-    width: auto;
-    color: rgb(179, 168, 168);
-    font-size: 2rem;
-    padding: 2px;
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-#about_card>div+h4 {
-    margin-top: 5%;
-
-}
-
-#resume {
-    text-align: center;
-    width: 1.8rem;
-    height: 5rem;
-    font-size: 3.5rem;
-    font-weight: 400;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(52, 75, 177);
-    border-radius: 10px;
-    padding: 8px;
-}
-
-#resume>img {
-    display: block;
-    margin-left: 4px;
-    width: 4rem;
-    height: 4.5rem;
-}
-
-#download_resume {
-    text-decoration: none;
-}
-
-
-
-
-/* ================================Medium Screen======================== */
-/* 
-
-@media all and (max-width:990px) {
-
-
 
     #home {
 
-        height: auto;
-      
-        grid-template-areas:
-            "middle"
-            "top"
-            "about";
-    }
-
-    #home_left {
         width: 100%;
-        grid-area: top;
-
-
-    }
-
-    #home_right {
-        width: 100%;
-        grid-area: middle;
+        height: 100vh;
         display: grid;
-        justify-content: center;
+        grid-template-columns: 20vw 80vw;
+        grid-template-rows: 30% 70%;
+
+        padding-top: 40px;
+        grid-template-areas: "left right"
+            "left about";
+    }
+
+    #home_left {
+
+
+        grid-area: left;
+        display: flex;
+
         align-items: center;
-    }
-
-    #about {
-        width: 100%;
-        grid-area: about;
-    }
-
-    #about_card {
-        width: 90%;
-        padding: 10px;
 
     }
+
+
 
     #home_img {
-        width: 10rem;
-        height: 10rem;
-
-    }
-    #about_card>div {
-        width: auto;
-        color: rgb(179, 168, 168);
-        font-size: 1.5rem;
-        padding: 2px;
-        display: block;
+        display:flex;
         margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+
+    }
+
+    #home_right {
+        grid-area: right;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    #about {
+        grid-area: about;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+        align-items: center;
+
+    }
+
+    #about_card {
+        width: 80%;
+
+        flex-wrap: wrap;
+
+        color: #97b695;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 2.5rem;
+        overflow: hidden;
     }
+
     
-    #about_card>div+h4 {
-        margin-top: 5%;
-    
+    #resume {
+        text-align: center;
+        width: 1.8rem;
+        height: 5rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(52, 75, 177);
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    #resume>img {
+        display: block;
+        margin-left: 4px;
+        width: 4rem;
+        height: 4.5rem;
+    }
+
+    #download_resume {
+        text-decoration: none;
     }
 
 
 
 
-} */
+    /* ================================Medium Screen======================== */
 
-/* ============================Small Screen======================================== */
-
-@media all and (max-width:632px) {
+    @media all and (max-width:990px) {
 
 
 
-    #home {
+        #home {
+
+            height: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: 20vh 37vh 43vh;
+            grid-template-areas:
+                "middle"
+                "top"
+                "about";
+        }
+
+        #home_left {
+            width: 100%;
+            grid-area: top;
 
 
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "middle"
-            "top"
-            "about";
-    }
-
-    #home_left {
-        width: 100%;
-        grid-area: top;
+        }
 
 
-    }
+        #home_right {
+            width: 100%;
+            grid-area: middle;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
 
-    #home_right {
-        width: 100%;
-        grid-area: middle;
-    }
+        #home_right>h4 {
+          
+            text-align: center;
+        }
 
-    #about {
-        width: 100%;
-        grid-area: about;
-    }
+        #about {
+            width: 100%;
+            grid-area: about;
+            row-gap: 0;
+        }
 
-    #about_card {
-        width: 70%;
-        padding: 2px;
-    }
+        #about_card {
+            width: 70%;
+            padding: 5px;
 
-    #about_card>h2 {
-        font-size: 1.4rem;
-        font-weight: normal;
-    }
+        }
 
-    #home_img {
-        width: 11rem;
-        height: 11rem;
+        #home_img {
+            width: 11rem;
+            height: 11rem;
 
-    }
+        }
 
+        #resume_1 {
+            padding: 2px;
+            margin-top: 1px;
+        }
 
-
-
-}
-
-
-@media all and (max-width:400px) {
-
-
-    #home {
-
-
-        grid-template-columns: 100%;
-        grid-template-rows: 25vh 30vh 45vh;
-        grid-template-areas:
-            "middle"
-            "top"
-            "about";
-    }
-
-    #home_left {
-        width: 100%;
-        grid-area: top;
 
 
     }
 
-    #home_right {
-        width: 100%;
-        grid-area: middle;
+    /* ============================Small Screen======================================== */
+
+    @media all and (max-width:634px) {
+
+
+
+        #home {
+
+            grid-template-rows: 25vh 30vh 45vh;
+            grid-template-columns: 100%;
+
+            grid-template-areas:
+                "middle"
+                "top"
+                "about";
+        }
+
+        #home_left {
+            width: 100%;
+            grid-area: top;
+        }
+
+
+        #home_img {
+            width: 9rem;
+            height: 9rem;
+
+        }
+
+
+        #home_right {
+            width: 100%;
+            grid-area: middle;
+        }
+
+        #home_right>h2 {
+            font-size: 20px;
+        }
+
+        #home_right>h4 {
+       
+            font-size: 15px;
+        }
+
+        #about {
+            width: 100%;
+            grid-area: about;
+            row-gap: 0;
+            padding-top: 0;;
+        }
+
+       
+
+        #about_card {
+            width: 70%;
+            padding: 2px;
+        }
+
+        #about_card>div {
+            font-size: 20px;
+        }
+
+        #about_card>p {
+            margin-top: 1px;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+
+
     }
 
-    #about {
-        width: 100%;
-        grid-area: about;
+
+    @media all and (max-width:410px) {
+
+
+        #home {
+
+
+            grid-template-columns: 100%;
+            grid-template-rows: 25vh 30vh 45vh;
+            grid-template-areas:
+                "middle"
+                "top"
+                "about";
+        }
+
+        #home_left {
+            width: 100%;
+            grid-area: top;
+
+
+        }
+
+        #home_img {
+            width: 10rem;
+            height: 10rem;
+
+        }
+
+        #home_right {
+            width: 100%;
+            grid-area: middle;
+        }
+
+        #home_right>h2 {
+            font-size: 16px;
+        }
+
+        #home_right>h4 {
+           
+            font-size: 12px;
+        }
+
+
+        #about {
+            width: 100%;
+            grid-area: about;
+            row-gap: 0;
+        }
+
+        #about_card {
+            width: 90%;
+            padding: 2px;
+        }
+
+        #about_card>h2 {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+       
+
+        #about_card>div {
+            font-size: 16px;
+        }
+
+        #about_card>p {
+            margin-top: -2px;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+
+
+
+
     }
-
-    #about_card {
-        width: 90%;
-        padding: 2px;
-    }
-
-    #about_card>h2 {
-        font-size: 1rem;
-        font-weight: normal;
-    }
-
-    #home_img {
-        width: 12rem;
-        height: 12rem;
-
-    }
-
-
-
-}
