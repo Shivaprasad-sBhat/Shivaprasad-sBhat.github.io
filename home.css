@@ -62,7 +62,7 @@
 
         flex-wrap: wrap;
 
-        color: #97b695;
+        color: white;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -73,6 +73,11 @@
         overflow: hidden;
     }
 
+    #about_card > div {
+    font-size: 30px;
+    font-weight: 400;
+    
+    }
     
     #resume {
         text-align: center;

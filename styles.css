@@ -17,22 +17,16 @@ html {
 
 body {
 
-    background: #080808;
-     color: #fff;
+    background-color: #101010;
+    color: #fff;
 
 }
 
-
-
-.container {
-
-    padding: 10px 10%;
-
-}
 
 nav {
     width: 100%;
     height: 40px;
+    padding: 0 10px 0 10px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -40,14 +34,14 @@ nav {
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
     flex-wrap: wrap;
-    padding: 0 15px 0 15px;
+    box-shadow: rgba(226, 220, 220, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .logo {
 
     width: 50px;
     height: 50px;
-
+    margin-right: 15px;
 }
 
 nav ul li {
@@ -92,6 +86,8 @@ nav ul li a::after {
 
 }
 
+#sidemenu {}
+
 nav ul li a:hover::after {
 
     width: 100%;
@@ -105,7 +101,7 @@ nav .fas {
 
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:632px) {
 
     nav .fas {
 
@@ -115,7 +111,7 @@ nav .fas {
 
     nav ul {
 
-        background: rgb(107, 107, 100);
+        background: darkslategrey;
 
         position: fixed;
 
