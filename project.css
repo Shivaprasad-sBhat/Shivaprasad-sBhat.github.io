@@ -2,18 +2,20 @@
 
 #work{
     width: 100vw;
-    height: 100vh;
-    padding:0 10% 0 10%;
-    background-color: #101010;
-
+    height: 100%;
+    padding:50px 5% 50px 5%;
+    background-color:#161616;
+    align-items: center;
 }
 .project-list{
-    width:100%;
+    width:80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
     grid-gap: 40px;
     margin: auto;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
 
 }
