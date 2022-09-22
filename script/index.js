@@ -28,4 +28,12 @@ function closemenu(){
       loop: true,
     });
   
-    
+    const myCarouselElement = document.querySelector("#carouselExampleFade");
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+	interval: 2500,
+});
+
+
+
+
+
