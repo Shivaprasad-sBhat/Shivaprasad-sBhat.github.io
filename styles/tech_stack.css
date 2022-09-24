@@ -1,6 +1,6 @@
 
 #skill{
-width: 100vw;
+width: 100%;
 height: 100%;
 text-align: center;
 padding-top: 50px;
@@ -70,6 +70,44 @@ padding-top: 50px;
 		}
 		
 
+		.statastics {
+
+			display: flexbox;
+	  
+			text-align: center;
+			padding: 0px 0 50px 0;
+	
+		}
+		.statastics >h1{
+			margin-bottom: 20px;
+		
+		}
+	
+		#stats_in {
+			display: grid;
+			grid-template-columns: repeat(4,auto);
+			padding: 30px 50px 0 50px;
+			justify-content: space-evenly;
+			column-gap: 20%;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+	
+		#stats_in>div {
+			display: flexbox;
+			box-shadow: rgba(199, 241, 238, 0.15) 1.95px 1.95px 2.6px;
+			padding: 10px;
+			column-gap: 10%;
+		}
+	
+		#stats_in>div>h2 {
+			color: rgb(189, 132, 25);
+		}
+	
+		#stats_in>div>h4 {
+			color: rgb(202, 209, 218);
+		}
+
 
 	@media all  and (max-width:1010px){
 
@@ -107,5 +145,24 @@ padding-top: 50px;
 			height: 60px;
 			
 		}
+
+		#stats_in {
+		
+			grid-template-columns: repeat(2,auto);
+			grid-template-rows: auto;
+			row-gap: 15px;
 			
+		}
+			
+		}
+
+		@media all  and (max-width:634px){
+
+			#stats_in {
+				
+				grid-template-columns: repeat(2,auto);
+				grid-template-rows: auto;
+				row-gap: 15px;
+				
+			}
 		}

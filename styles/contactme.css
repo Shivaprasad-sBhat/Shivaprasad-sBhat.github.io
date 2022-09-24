@@ -17,11 +17,12 @@ html {
     height: 100%;
     background: #080808;
     color: #fff;
-    padding-top: 50px;
+   padding: 6% 0;
 }
 
 
 .container {
+   
     padding: 10px 10%;
 
 }
@@ -88,7 +89,7 @@ html {
     transition: transform 0.5s;
 }
 
-.social-icons a span {
+/* .social-icons a span {
 
     text-decoration: none;
     font-size: 22px;
@@ -97,7 +98,7 @@ html {
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
-}
+} */
 
 .social-icons a:hover {
     color: rgb(0, 174, 255);
@@ -154,7 +155,7 @@ nav .fas {
 
 /* ================Media query======================= */
 
-@media only screen and (max-width:990px) {
+@media only screen and (max-width:1040px) {
 
 
     #contact {
@@ -206,7 +207,20 @@ nav .fas {
 
     }
 
+    .social-icons a {
+      
+        font-size: 20px;
+    }
+
     .copyright {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+
+    .social-icons a {
+      
+        font-size: 15px;
     }
 }

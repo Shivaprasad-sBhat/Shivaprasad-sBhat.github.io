@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 </head>
+
+
+<style>
+    .statastics {
+
+        display: flexbox;
+  
+        text-align: center;
+       
+
+    }
+    .statastics >h1{
+        margin-bottom: 20px;
+    }
+
+    #stats_in {
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-evenly;
+        column-gap: 20%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #stats_in>div {
+        display: flexbox;
+        box-shadow: rgba(226, 220, 220, 0.15) 1.95px 1.95px 2.6px;
+        padding: 10px;
+        column-gap: 20%;
+    }
+
+    #stats_in>div>h2 {
+        color: rgb(28, 121, 121);
+    }
+
+    #stats_in>div>h4 {
+        color: rgb(151, 148, 148);
+    }
+</style>
+
 <body>
 
 
@@ -32,7 +73,36 @@
 
     </nav>
 
-    <section id="skills" class="services-mf route">
+
+    <div style="padding: 89px;"></div>
+
+    <div class="statastics">
+        <h1 >Statastics</h1>
+        <div id="stats_in">
+            <div>
+                <h2>1200+</h2>
+                <h4>Hours of Coding</h4>
+            </div>
+            <div>
+                <h2>300+ </h2>
+                <h4>DSA Problems</h4>
+            </div>
+            <div>
+                <h2>100+</h2>
+                <h4>Hours of Soft Skills</h4>
+            </div>
+            <div>
+                <h2>200+</h2>
+                <h4>Git Commits</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <section id="skills" class="services-mf route">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
@@ -97,22 +167,23 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
 
-    
+
 </body>
+
 </html>
 
-<script >
+<script>
 
-var sidemeu = document.getElementById("sidemenu");
+    var sidemeu = document.getElementById("sidemenu");
 
-function openmenu(){
-    sidemeu.style.right = "0";
-}
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
 
-function closemenu(){
-    sidemeu.style.right = "-200px";
-}
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
 </script>
