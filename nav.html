@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/navbar.css">
+</head>
+<body>
+
+
+
+    <nav>
+        <a href="#home">
+            <p id="logo" style="font-family: fantasy;font-style: italic;color: honeydew;">Shivaprasad</p>
+        </a>
+        <span>
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+            </ul>
+        </span>
+        <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+
+    <section id="skills" class="services-mf route">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Skills
+              </h3>
+              <p class="subtitle-a">
+                Skills like coding and DSA
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-counter paralax-mf bg-image" style="background-image: url(img/minimalist_art_design_vi-wallpaper-2560x1440.jpg)">
+          <div class="overlay-mf"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3 col-lg-3">
+                <div class="counter-box">
+                  <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                  </div>
+                  <div class="counter-num">
+                    <p class="counter">1200</p>
+                    <span class="counter-text">+ HOURS OF CODING</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                  <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                  </div>
+                  <div class="counter-num">
+                    <p class="counter">800</p>
+                    <span class="counter-text">+ HOURS OF DSA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                  <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                  </div>
+                  <div class="counter-num">
+                    <p class="counter">100</p>
+                    <span class="counter-text">+ HOURS OF SOFTSKILLS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                  <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                  </div>
+                  <div class="counter-num">
+                    <p class="counter">200</p>
+                    <span class="counter-text">+ GIT COMMITS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    
+</body>
+</html>
+
+<script >
+
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+</script>

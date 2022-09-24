@@ -1,5 +1,17 @@
 
 
+var sidemeu = document.querySelector("#sidemenu");
+
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+
+
+
   
     // typing text animation script
     var typed = new Typed(".typing", {
@@ -22,14 +34,6 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 });
 
 
-let sidemeu = document.querySelector("#sidemenu");
 
-function openmenu() {
-    sidemeu.style.right = "0";
-}
-
-function closemenu() {
-    sidemeu.style.right = "-20px";
-}
 
 

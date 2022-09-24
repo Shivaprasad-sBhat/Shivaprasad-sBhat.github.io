@@ -12,13 +12,10 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/tech_stack.css">
-   <link rel="stylesheet" href="styles/contactme.css">
+    <link rel="stylesheet" href="styles/contactme.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    
-     <link
-     rel="stylesheet"
-     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-     <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/> 
 </head>
 
 
@@ -38,11 +35,11 @@
                 <li><a href="#work">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
 
-                <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()" style="color: white;"></i>
 
             </ul>
         </span>
-        <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+        <i class=" fas fa-solid fa-bars" onclick="openmenu()" style="color: white;"></i>
 
     </nav>
 
@@ -75,7 +72,7 @@
                 <div class="column right">
                     <div class="text" style="color: black;">I'm Shivaprasad Bhat and I'm a <span class="typing-2"
                             style="margin-bottom: 10px;"></span></div>
-                    <p>Aspiring Java Backend Developer with a proficient in
+                    <p  style="margin-bottom: 10px; line-height: 30px;font-family: sans-serif;font-weight: 500;font-size: 20px;">Aspiring Java Backend Developer with a proficient in
                         Java, Spring Boot, SQL,Git, AWS, HTML,
                         CSS, Javascript, Object-oriented, design And Self-motivated
                         and curious, with a keen interest in building user-centric
@@ -154,19 +151,20 @@
     <div id="softskill">
 
     </div>
-    <!-- ------------ git statastics---------------- -->
-    
+    <!-- ------------  statastics---------------- -->
+
+   
 
     <div id="git_cal" class="testimonials paralax-mf bg-image">
-      
+
         <h1 style="text-align: center;padding-bottom: 20px;">
             GitHub Calendar
         </h1>
         <div class="calendar" style="width: 80%;background-color: white;color: black;">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-      </div>
-      </div>
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </div>
 
     <!------------------------- Porjects-------------------------->
 
@@ -198,7 +196,7 @@
                         <div>
                             <a href="https://github.com/Ankur982/U2-CW-Ideacart_Project" target="_blank"
                                 rel="noopener noreferrer">GitHub</a>
-                            <a href="https://idea-cart.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                            <a href="https://ideakartcom.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
                         </div>
                     </div>
                     <h2 style="text-align:center ;">Ideakart Clone</h2>
@@ -269,47 +267,46 @@
 
 </html>
 
+
 <script src="script/index.js"></script>
 
 
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-></script>
-<script>
-  GitHubCalendar(".calendar", "Shivaprasad-sBhat");
-  // or enable responsive functionality
-  GitHubCalendar(".calendar", "Shivaprasad-sBhat", { responsive: true });
-</script>
-
 
 <script>
-    let skill = ["Team Work", "Time Management", "Problem solving", "Adaptible",]
-    let slide = document.querySelector("#softskill");
-    let i = 0;
-    text1 = document.createElement("h2")
-    text1.innerText = skill[i++];
+ 
 
-    slide.append(text1);
-
-    function slideshow(skill) {
-
-        setInterval(function () {
-            slide.innerHTML = "";
-
-            text1 = document.createElement("h2")
-            text1.innerText = skill[i++];
-
-            slide.append(text1);
-
-            if (i == skill.length) {
-                i = 0;
-            }
-
-        }, 1500);
+GitHubCalendar(".calendar", "Shivaprasad-sBhat");
+// or enable responsive functionality
+GitHubCalendar(".calendar", "Shivaprasad-sBhat", { responsive: true });
 
 
-    }
-    slideshow(skill);
+   let skill = ["Team Work", "Time Management", "Problem solving", "Adaptable","Empathy"]
+let slide = document.querySelector("#softskill");
+let i = 0;
+text1 = document.createElement("h2")
+text1.innerText = skill[i++];
+
+slide.append(text1);
+
+function slideshow(skill) {
+
+    setInterval(function () {
+        slide.innerHTML = "";
+
+        text1 = document.createElement("h2")
+        text1.innerText = skill[i++];
+
+        slide.append(text1);
+
+        if (i == skill.length) {
+            i = 0;
+        }
+
+    }, 1500);
+
+
+}
+slideshow(skill);
 </script>
