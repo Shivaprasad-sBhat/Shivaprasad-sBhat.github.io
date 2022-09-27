@@ -55,7 +55,7 @@ section .title::after {
 
 .home {
   display: flex;
- background-image: url(images/home-bacground.jpg);
+ background-image: url(/Shivaprasad-sBhat.github.io/images/home-bacground.jpg);
   background-color: #111;
   height: 100vh;
   color: #fff;
