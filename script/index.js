@@ -22,14 +22,6 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 });
 
 
-let sidemeu = document.querySelector("#sidemenu");
 
-function openmenu() {
-    sidemeu.style.right = "0";
-}
-
-function closemenu() {
-    sidemeu.style.right = "-20px";
-}
 
 

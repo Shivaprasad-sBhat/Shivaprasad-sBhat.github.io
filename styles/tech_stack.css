@@ -112,7 +112,9 @@ padding-top: 50px;
 
 	@media all  and (max-width:1010px){
 
-		
+		.git-stat{
+			display: block;
+		}
 	.techstack {
 	
 	
@@ -132,7 +134,15 @@ padding-top: 50px;
 
 	@media all  and (max-width:634px){
 
-		
+		.git-stat{
+			display: block;
+			
+		}
+		.git-stat>img{
+			width: 70%;
+			height: 70%;
+			
+		}
 		.techstack {
 		
 		
