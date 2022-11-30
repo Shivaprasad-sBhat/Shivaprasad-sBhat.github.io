@@ -91,6 +91,9 @@ section .title::after {
   color: orange;
   font-weight: 500;
 }
+
+
+
 .resume_btn {
   display: block;
   margin: 50px auto;
@@ -102,6 +105,11 @@ section .title::after {
   color: orange;
   transition: 0.5s;
 
+}
+
+.home .home-content .resume_btn{
+  margin-top: 50px;
+  margin-left: 0px;
 }
 .resume_btn:hover {
   border: 1px solid rgb(54, 62, 182);

@@ -1,179 +1,207 @@
-
-#skill{
-width: 100%;
-height: 100%;
-text-align: center;
-padding-top: 50px;
+/* #skill {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
 }
 
-#skill >h2{
+#skill>h2 {
 
 	color: rgb(229, 237, 243);
+
+}
+
+
+.techstack {
+
+	z-index: 1;
+	width: 90%;
+	height: 80vh;
+	
+
+
+} */
+
+#skill {
+    width: 80%;
+    margin: auto;
+	padding-top: 50px;
+  }
+
+  #skill>h1 {
+   text-align: center;
+  }
+  #skill > #techstack {
+    width: 100%;
+    padding: 5% 10%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 2fr);
+	justify-content: space-evenly;
+	align-items: center;
+	margin: auto;
+   	gap: 30px;
+  }
+  #skill > #techstack > div {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+  }
+  #skill > #techstack > div:hover {
+    transform: scale(1.05);
+  }
+  #skill > #techstack > div > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+.slide {
+	width: 160px;
+	height: 150px;
+	box-shadow: 0px 10px 20px -5px rgb(7, 7, 7);
+	transition: 0.8s;
+	background-color: rgb(3, 3, 3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+
+}
+
+.slide:hover {
+	transform: translateY(-6px);
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: rgb(243, 236, 236);
+}
+
+
+
+
+.statastics {
+
+	display: flexbox;
+
+	text-align: center;
+	padding: 50px 0 50px 0;
+
+}
+
+.statastics>h1 {
+	margin-bottom: 20px;
+
+}
+
+.git-stat>img {
+	
+	padding: 25px;
 	
 }
 
-	
-	.techstack {
-	
-		z-index: 1;
-		width: 90%;
-		height: 80vh;
-		display: grid;
-		grid-template-columns: repeat(5,1fr);
-		grid-template-rows: repeat(2,2fr);
-		justify-content: space-evenly;
-		align-items: center;
-		margin: auto;
-	    
-		
+
+#stats_in {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	padding: 30px 50px 0 50px;
+	justify-content: space-evenly;
+	column-gap: 20%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#stats_in>div {
+	display: flexbox;
+	box-shadow: rgba(199, 241, 238, 0.15) 1.95px 1.95px 2.6px;
+	padding: 10px;
+	column-gap: 10%;
+}
+
+#stats_in>div>h2 {
+	color: rgb(189, 132, 25);
+}
+
+#stats_in>div>h4 {
+	color: rgb(202, 209, 218);
+}
+
+
+@media all and (max-width:1010px) {
+
+	.git-stat {
+		display: block;
 	}
 
-	.slide{
-		width: 160px;
-		height: 150px;
-		box-shadow: 0px 10px 20px -5px rgb(7, 7, 7);
-		transition: 0.8s;
-		background-color: rgb(3, 3, 3);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: auto;
-	
+	#skill > #techstack {
+		grid-template-columns: repeat(4, .1fr);
+		grid-template-rows: repeat(3, 2fr);
+		gap: 20px;
 	}
 
-	.slide:hover{
-		transform: translateY(-6px);
-	}
-	
-	.slide img{
-		width: 100%;
-		height: 100%;
-		border-radius: 5px;
-		background-color: rgb(243, 236, 236);
-	}
-	
-	#softskill{
-	
-		color:rgb(247, 247, 247);
-		
-		padding: 50px 0 50px 0;
-		margin: auto;
-		}
-
-		#softskill h2{
-			
-			color: rgb(221, 213, 213);
-			z-index: 1;
-			text-align: center;
-			transition: ease;
-			text-rendering: optimizeSpeed;
-		
-		}
-		
-
-		.statastics {
-
-			display: flexbox;
-	  
-			text-align: center;
-			padding: 0px 0 50px 0;
-	
-		}
-		.statastics >h1{
-			margin-bottom: 20px;
-		
-		}
-	
-		#stats_in {
-			display: grid;
-			grid-template-columns: repeat(4,auto);
-			padding: 30px 50px 0 50px;
-			justify-content: space-evenly;
-			column-gap: 20%;
-			align-items: center;
-			justify-content: space-evenly;
-		}
-	
-		#stats_in>div {
-			display: flexbox;
-			box-shadow: rgba(199, 241, 238, 0.15) 1.95px 1.95px 2.6px;
-			padding: 10px;
-			column-gap: 10%;
-		}
-	
-		#stats_in>div>h2 {
-			color: rgb(189, 132, 25);
-		}
-	
-		#stats_in>div>h4 {
-			color: rgb(202, 209, 218);
-		}
-
-
-	@media all  and (max-width:1010px){
-
-		.git-stat{
-			display: block;
-		}
-	.techstack {
-	
-	
-		grid-template-columns: repeat(4,.1fr);
-		grid-template-rows: repeat(3,2fr);
-	
-	}
-
-	.slide{
+	.slide {
 		width: 110px;
 		height: 90px;
-		
-	}
-		
+
 	}
 
+}
 
-	@media all  and (max-width:634px){
 
-		.git-stat{
-			display: block;
-			
-		}
-		.git-stat>img{
-			width: 70%;
-			height: 70%;
-			
-		}
-		.techstack {
-		
-		
-			grid-template-columns: repeat(3,.1fr);
-			grid-template-rows: repeat(4,2fr);
-		
-		}
-	
-		.slide{
-			width: 80px;
-			height: 60px;
-			
-		}
+@media all and (max-width:634px) {
 
-		#stats_in {
-		
-			grid-template-columns: repeat(2,auto);
-			grid-template-rows: auto;
-			row-gap: 15px;
-			
-		}
-			
-		}
+	.git-stat {
+		display: block;
 
-		@media all  and (max-width:634px){
+	}
 
-			#stats_in {
-				
-				grid-template-columns: repeat(2,auto);
-				grid-template-rows: auto;
-				row-gap: 15px;
-				
-			}
-		}
+	.git-stat>img {
+		width: 70%;
+		height: 70%;
+
+	}
+
+	#skill > #techstack {
+
+
+		grid-template-columns: repeat(3, .1fr);
+		grid-template-rows: repeat(4, 2fr);
+		gap: 10px;
+	}
+
+	.slide {
+		width: 80px;
+		height: 60px;
+
+	}
+
+	#stats_in {
+
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: auto;
+		row-gap: 15px;
+
+	}
+
+}
+
+@media all and (max-width:634px) {
+
+	#stats_in {
+
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: auto;
+		row-gap: 15px;
+
+	}
+}     

@@ -55,7 +55,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Shivaprasad Bhat</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a class="resume_btn" href="images/Shivaprasad_Bhat_Resume.pdf" download>Resume <i
+                <a class="resume_btn"  href="images/Shivaprasad_Bhat_Resume.pdf" download>Resume <i
                         class="fa-solid fa-download"> </i></a>
             </div>
         </div>
@@ -93,7 +93,7 @@
     <div id="skill" >
         <h1>Technical Skills</h1>
 
-        <div class="techstack">
+        <div id="techstack">
 
             <div class="slide">
                 <img src="images/Java.png" alt="Java">
@@ -113,7 +113,7 @@
 
             </div>
             <div class="slide">
-                <img src="images/aws.jpg" alt="AWS">
+                <img src="images/aws-logo.jpg" alt="AWS">
 
             </div>
             <div class="slide">
@@ -121,11 +121,11 @@
 
             </div>
             <div class="slide">
-                <img src="images/HTML5_badge.png" alt="HTML">
+                <img src="images/html-logo-2.png" alt="HTML">
 
             </div>
             <div class="slide">
-                <img src="images/css-3.jpg" alt="CSS">
+                <img src="images/css-logo-3.png" alt="CSS">
 
             </div>
             <div class="slide">
@@ -133,7 +133,7 @@
 
             </div>
             <div class="slide">
-                <img src="images/git.png" alt="Git">
+                <img src="images/git-logo-1.png" alt="Git">
 
             </div>
 
@@ -152,6 +152,17 @@
 
     </div> -->
     <!-- ------------  statastics---------------- -->
+    <div id="git_cal" class="testimonials paralax-mf bg-image" >
+
+        <h1 style="text-align: center;padding-bottom: 30px;">
+            GitHub Calendar
+        </h1>
+        <div class="calendar" style="width: 80%; background-color: white; color: black;">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </div>
+
     <div class="statastics" >
         <h1 >GitHub Statastics</h1>
             <div class="git-stat">
@@ -159,37 +170,8 @@
             <img  src="https://github-readme-stats.vercel.app/api?username=Shivaprasad-sBhat&show_icons=true&locale=en" alt="" />
             <img  src="https://github-readme-streak-stats.herokuapp.com/?user=Shivaprasad-sBhat&" alt="" />
             </div>
-        <!-- <div id="stats_in">
-            <div>
-                <h2>1200+</h2>
-                <h4>Hours of Coding</h4>
-            </div>
-            <div>
-                <h2>300+ </h2>
-                <h4>DSA Problems</h4>
-            </div>
-            <div>
-                <h2>100+</h2>
-                <h4>Hours of Soft Skills</h4>
-            </div>
-            <div>
-                <h2>200+</h2>
-                <h4>Git Commits</h4>
-            </div>
-        </div> -->
-    </div>
+   </div>
    
-
-    <div id="git_cal" class="testimonials paralax-mf bg-image" >
-
-        <h1 style="text-align: center;padding-bottom: 30px;">
-            GitHub Calendar
-        </h1>
-        <div class="calendar" style="width: 80%;background-color: white;color: black;">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
-    </div>
 
     <!------------------------- Porjects-------------------------->
 
@@ -241,7 +223,43 @@
 
                 </div>
 
+                <div class="work">
+                    <div id="projectImg">
+                    <img src="images/IdeaKart-clone.PNG">
+                </div>
+                    <div class="layer">
+                        <h2 style="margin-bottom: 30px;color:  rgb(77, 54, 45);">MGNREGA Work Management App</h2>
+                        <h4>A console based application to manage employements offerd by MGNREGA scheme.</h4>
+                        <h3> Tech Stack: Java | MYSQL </h3>
+                        
+                         <div>
+                            <a href="https://github.com/Shivaprasad-sBhat/MGNREGA-Work-Management-Application" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                            <a href="https://ideakartcom.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                        </div>
+                    </div>
+                    
 
+                </div>
+
+                <div class="work">
+                    <div id="projectImg">
+                    <img src="images/IdeaKart-clone.PNG">
+                </div>
+                    <div class="layer">
+                        <h2 style="margin-bottom: 30px;color:  rgb(77, 54, 45);">Ideakart Clone</h2>
+                        <h4>A web application for buying and selling Books</h4>
+                        <h3> Tech Stack: HTML | CSS | JAVASCRIPT</h3>
+                        
+                         <div>
+                            <a href="https://github.com/Ankur982/U2-CW-Ideacart_Project" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                            <a href="https://ideakartcom.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                        </div>
+                    </div>
+                    
+
+                </div>
             </div>
         </div>
     </div>
@@ -309,7 +327,7 @@
 
 
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-
+<!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
 
 <script>
  
@@ -330,31 +348,4 @@ function closemenu() {
     sidemeu.style.right = "-220px";
    
 }
-//    let skill = ["Team Work", "Time Management", "Problem solving", "Adaptable","Empathy"]
-// let slide = document.querySelector("#softskill");
-// let i = 0;
-// text1 = document.createElement("h2")
-// text1.innerText = skill[i++];
-
-// slide.append(text1);
-
-// function slideshow(skill) {
-
-//     setInterval(function () {
-//         slide.innerHTML = "";
-
-//         text1 = document.createElement("h2")
-//         text1.innerText = skill[i++];
-
-//         slide.append(text1);
-
-//         if (i == skill.length) {
-//             i = 0;
-//         }
-
-//     }, 1500);
-
-
-// }
-// slideshow(skill);
 </script>

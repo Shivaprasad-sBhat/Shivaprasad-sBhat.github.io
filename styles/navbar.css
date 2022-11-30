@@ -120,12 +120,12 @@ body {
    
    
     }
-    @keyframes blinking{
+    /* @keyframes blinking{
     0%{  color: rgb(156, 200, 218); }
    
     33%{  color:rgb(103, 116, 189) }
     100%{ color: rgb(159, 213, 223);  }
-    }
+    } */
 
 .nav .fass {
 
