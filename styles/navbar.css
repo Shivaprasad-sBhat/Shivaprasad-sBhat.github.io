@@ -106,6 +106,9 @@ body {
     transition: 0.5s;
   
   }
+
+  
+
   .resume_btn2:hover {
    
     color: rgb(54, 62, 182);
@@ -114,13 +117,13 @@ body {
 
   
 
-  .resume_btn2>a{
+  /* .resume_btn2>a{
     animation:blinking 1.5s infinite;
     font-weight: 600;
    
    
     }
-    /* @keyframes blinking{
+     @keyframes blinking{
     0%{  color: rgb(156, 200, 218); }
    
     33%{  color:rgb(103, 116, 189) }

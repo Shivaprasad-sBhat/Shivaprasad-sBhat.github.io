@@ -8,6 +8,7 @@
    
 }
 
+
 #projectImg {
     height: 250px;
     margin-bottom: 30px;
@@ -50,12 +51,18 @@
     transition: transform(0.5s);
 }
 
+.work :hover{
+    cursor: pointer;
+ }
 
 .layer {
     background-color: rgb(250, 249, 248);
 }
 
-
+.layer h4 {
+    line-height: 25px;
+    margin-bottom: 5px;   
+}
 
 .layer div {
 
@@ -95,7 +102,7 @@
     }
 
 
-    .layer h3 {
+    .layer h4 {
         font-weight: 500;
         margin-bottom: 7px;
     }
