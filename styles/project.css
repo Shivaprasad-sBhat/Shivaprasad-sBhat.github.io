@@ -63,7 +63,10 @@
     line-height: 25px;
     margin-bottom: 5px;   
 }
-
+.layer p{
+    line-height: 25px;
+    margin-bottom: 5px;   
+}
 .layer div {
 
     margin-bottom: 20px;
@@ -107,10 +110,10 @@
         margin-bottom: 7px;
     }
 
-    .layer p {
-        display: none;
-        font-weight: 500;
-        font-size: 14px;
+    .layer p{
+        line-height: 25px;
+        margin-bottom: 5px;   
     }
+
 
 }

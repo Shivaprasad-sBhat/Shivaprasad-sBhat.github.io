@@ -1,18 +1,14 @@
-
-
-
-
-
 section {
   padding: 50px 0;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-.about .about-content{
+.about .about-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -29,6 +25,7 @@ section .title {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
+
 section .title::before {
   content: "";
   position: absolute;
@@ -39,6 +36,7 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+
 section .title::after {
   position: absolute;
   bottom: -8px;
@@ -55,8 +53,6 @@ section .title::after {
 
 .home {
   display: flex;
- background-image: url(home-bacground.jpg);
- 
   background-color: #111;
   height: 100vh;
   color: #fff;
@@ -65,13 +61,16 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
+
 .home .max-width {
   width: 100%;
   display: flex;
 }
+
 .home .max-width .row {
   margin-right: 0;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
@@ -83,10 +82,12 @@ section .title::after {
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
   color: orange;
   font-weight: 500;
@@ -107,10 +108,11 @@ section .title::after {
 
 }
 
-.home .home-content .resume_btn{
+.home .home-content .resume_btn {
   margin-top: 50px;
   margin-left: 0px;
 }
+
 .resume_btn:hover {
   border: 1px solid rgb(54, 62, 182);
   color: rgb(54, 62, 182);
@@ -118,37 +120,44 @@ section .title::after {
 }
 
 /* about section */
-.about{
+.about {
 
-background-color: rgb(227, 233, 238);
+  background-color: rgb(227, 233, 238);
 
 
 }
+
 .about .title {
- color: black;
- border:0px solid transparent;
+  color: black;
+  border: 0px solid transparent;
 }
+
 .about .about-content .left {
   width: 45%;
 }
+
 .about .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 200px 200px;
 }
+
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
   color: red;
-  
+
 }
+
 .about .about-content .right p {
   text-align: justify;
   color: black;
@@ -167,6 +176,7 @@ background-color: rgb(227, 233, 238);
   transition: 0.5s;
 
 }
+
 .resume_btn1:hover {
   border: 1px solid rgb(54, 62, 182);
   color: rgb(54, 62, 182);
@@ -187,64 +197,73 @@ background-color: rgb(227, 233, 238);
     padding: 0 50px;
   }
 }
+
 @media (max-width: 947px) {
- 
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width {
     max-width: 930px;
   }
+
   .about .about-content .column {
     width: 100%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
-  
+
 }
 
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
- 
+
 }
 
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .about .about-content .right .text
-   {
+
+  .about .about-content .right .text {
     font-size: 19px;
   }
-  
- 
-}
 
-   
+
+}
