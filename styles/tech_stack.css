@@ -35,8 +35,8 @@
     width: 100%;
     padding: 5% 10%;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(2, 2fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 2fr);
 	justify-content: space-evenly;
 	align-items: center;
 	margin: auto;
@@ -145,7 +145,7 @@
 	}
 
 	#skill > #techstack {
-		grid-template-columns: repeat(4, .1fr);
+		grid-template-columns: repeat(3, .1fr);
 		grid-template-rows: repeat(3, 2fr);
 		gap: 20px;
 	}
