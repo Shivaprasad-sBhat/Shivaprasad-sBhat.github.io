@@ -35,7 +35,7 @@
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#work">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="resume_btn2"><a href="images/Shivaprasad_Bhat_Resume.pdf" download>Resume</a></li>
+                <li class="resume_btn2"><a href="images/Shivaprasad_Bhat_Resume.pdf" download class="resume_view">Resume</a></li>
                 <i class=" fass fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()" style="color: white;"></i>
 
             </ul>
@@ -56,7 +56,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Shivaprasad Bhat</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a class="resume_btn" href="images/Shivaprasad_Bhat_Resume.pdf" download>Resume <i
+                <a class="resume_btn" href="images/Shivaprasad_Bhat_Resume.pdf" download class="resume_view">Resume <i
                         class="fa-solid fa-download"> </i></a>
             </div>
         </div>
@@ -86,7 +86,7 @@
                         than 500 data structure questions. Strongly interested in obtaining a backend developer position 
                         to create impactful and scalable products.
                         .</p>
-                    <a class="resume_btn1" href="images/Shivaprasad_Bhat_Resume.pdf" download>Resume <i
+                    <a class="resume_btn1" href="images/Shivaprasad_Bhat_Resume.pdf" download class="resume_view">Resume <i
                             class="fa-solid fa-download"> </i></a>
                 </div>
             </div>
@@ -345,6 +345,10 @@
 <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
 
 <script>
+
+    document.querySelector(".resume_view").addEventListener("click",function(){
+        window.open("./images/Shivaprasad_Bhat_Resume.pdf","_blank");
+    });
 
 
     GitHubCalendar(".calendar", "Shivaprasad-sBhat");
