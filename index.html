@@ -13,9 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+   
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Shivaprasad Bhat</title>
 </head>
@@ -419,10 +420,13 @@
     //     GitHubCalendar(".calendar", "Shivaprasad-sBhat");
     //     GitHubCalendar(".calendar", "Shivaprasad-sBhat", { responsive: true });
     // };
-
-
+    window.onload = function () {
+    GitHubCalendar(".calendar", "Shivaprasad-sBhat");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "Shivaprasad-sBhat", { responsive: true });
+    }
 </script>
-
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
 

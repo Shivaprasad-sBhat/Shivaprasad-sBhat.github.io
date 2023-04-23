@@ -81,10 +81,9 @@
     align-content: center;
       justify-content: center;
   }
-  .imgdiv > img {
-    width: 60%;
+  .imgdiv>img {
+    width: 40%;
     height: auto;
-    padding-top: 20px;
     border-radius: 15px;
   }
   
@@ -159,7 +158,10 @@
       line-height: 25px;
   }
   .project__details>ul{
-      list-style-type: none;  
+      list-style-type: none; 
+      text-align: center; 
+      align-items: center;
+    
   }
   
   
