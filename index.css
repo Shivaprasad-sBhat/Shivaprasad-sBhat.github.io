@@ -88,13 +88,13 @@ h2 {
   margin-right: 30px;
 }
 
-.imgdiv {
+.home-img {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-.imgdiv>img {
+.home-img>img {
   width: 40%;
   height: auto;
   border-radius: 15px;
@@ -410,7 +410,7 @@ textarea {
   }
 
 
-  .imgdiv>img {
+  .home-img>img {
     width: 75%;
     height: auto;
     border-radius: 15px;
@@ -541,7 +541,7 @@ textarea {
   }
 
 
-  .imgdiv>img {
+  .home-img>img {
     width: 60%;
     height: auto;
     border-radius: 15px;
