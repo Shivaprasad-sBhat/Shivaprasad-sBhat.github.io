@@ -361,28 +361,28 @@
                 <h2>Contact me</h2>
                 <p>Please feel free to contact me via email or linkedin</p>
 
-                <ul class="footer__socials">
-                    <li>
+                <div class="footer__socials" style="border: 1px solid rebeccapurple;">
+                    <span>
 
                         <a id="contact-email" style="text-decoration: none; " href="mailto:bhatshivaprasad98@gmail.com"
                             rel="noopener noreferrer"> <i class="fa-solid fa-envelope"></i>
                         </a>
-                    </li>
+                    </span>
 
-                    <li>
+                    <span>
                         <a id="contact-linkedin" href="https://www.linkedin.com/in/shivaprasad-bhat" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                    </li>
+                    </span>
                     <!-- uil uil-linkedin -->
-                    <li>
+                    <span>
                         <a id="contact-github" href="https://github.com/Shivaprasad-sBhat" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
-                    </li>
+                    </span>
                     <!-- uil uil-github -->
-                    <li><i class="fas fa-phone-square-alt"></i></li>
-                    <li id="contact-phone">+91 8660198190</li>
-                    <!-- id="phone__li" uil uil-phone-alt-->
-                </ul>
+                    <span><i class="fas fa-phone-square-alt"></i></span>
+                    <span id="contact-phone">+91 8660198190</span>
+                 
+                </div>
 
 
                 <p>You can also download my resume using below button</p>
@@ -402,6 +402,8 @@
 
         </div>
     </div>
+
+  
 </body>
 
 </html>
@@ -427,12 +429,7 @@
     resume4.addEventListener("click", function () {
         window.open("https://drive.google.com/file/d/1zzIk8jfoFOlHGeh2UU__rubw-6Vxo6uC/view?usp=share_link")
     })
-    //https://drive.google.com/file/d/1B56kJzteSOrBSyVhofgH4Tat-FTI6eCS/view?usp=sharing
-
-    // window.onload = function () {
-    //     GitHubCalendar(".calendar", "Shivaprasad-sBhat");
-    //     GitHubCalendar(".calendar", "Shivaprasad-sBhat", { responsive: true });
-    // };
+   
     window.onload = function () {
         GitHubCalendar(".calendar", "Shivaprasad-sBhat");
         // or enable responsive functionality

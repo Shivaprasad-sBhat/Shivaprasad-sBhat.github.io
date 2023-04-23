@@ -292,9 +292,11 @@ h2 {
 
 .footer__socials {
   display: flex;
+  
+  justify-content: center;
   font-size: 30px;
-  gap: 10px;
-  list-style-type: none;
+  gap: 15px;
+
 }
 
 .footer__socials i {
